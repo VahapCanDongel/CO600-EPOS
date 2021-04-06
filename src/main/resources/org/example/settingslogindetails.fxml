@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1900.0" style="-fx-background-color: #3d3d3d;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.SettingsController">
+   <children>
+      <Rectangle arcHeight="5.0" fill="#fc5959" height="74.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1900.0" />
+      <Label layoutX="14.0" layoutY="5.0" stylesheets="@u.css" text="EPOS" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="95.0" layoutY="4.0" stylesheets="@u.css" text="|" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="156.0" layoutY="5.0" stylesheets="@u.css" text="Ollie's Kebab Sutton" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="174.0" layoutY="28.0" stylesheets="@u.css" text="1C High St, SM1 1DE" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="189.0" layoutY="48.0" stylesheets="@u.css" text=" 020 8642 5050" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="1651.0" layoutY="69.0" prefHeight="65.0" prefWidth="113.0" stylesheets="@u.css" text="--------" textFill="WHITE" visible="false">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <TableView fx:id="userTable" layoutX="17.0" layoutY="130.0" prefHeight="543.0" prefWidth="511.0" stylesheets="@u.css">
+        <columns>
+            <TableColumn fx:id="userUsernameCol" editable="false" prefWidth="124.0" text="USERNAME" />
+          <TableColumn fx:id="userPasswordCol" editable="false" prefWidth="384.0" text="PASSWORD" />
+        </columns>
+      </TableView>
+      <Button layoutX="16.0" layoutY="682.0" mnemonicParsing="false" onMouseClicked="#editUserDetailsButtonClick" style="-fx-min-height: 20; -fx-min-width: 150;" stylesheets="@u.css" text="EDIT details" />
+      <TextField id="settingsUiButtons" fx:id="userUsernameTextField" layoutX="17.0" layoutY="735.0" prefHeight="40.0" prefWidth="255.0" promptText="username" stylesheets="@u.css" />
+      <Button id="settingsUiButtons" fx:id="saveUserDetailsButtonClick" layoutX="569.0" layoutY="735.0" mnemonicParsing="false" onMouseClicked="#saveUserDetailsEdited" style="-fx-min-height: 20;" stylesheets="@u.css" text="SAVE" />
+      <Label layoutX="752.0" layoutY="12.0" stylesheets="@u.css" text="system login details SETTINGS" textFill="WHITE">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="52.0" fitWidth="54.0" layoutX="1834.0" layoutY="12.0" onMouseClicked="#homeButtonClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@home-page.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="16.0" layoutY="88.0" stylesheets="@u.css" text="SYSTEM USER INFORMATION" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TableView fx:id="adminTable" layoutX="904.0" layoutY="130.0" prefHeight="543.0" prefWidth="511.0" stylesheets="@u.css">
+         <columns>
+            <TableColumn fx:id="adminUsernameCol" editable="false" prefWidth="124.0" text="USERNAME" />
+            <TableColumn fx:id="adminPasswordCol" editable="false" prefWidth="384.0" text="PASSWORD" />
+         </columns>
+      </TableView>
+      <Label layoutX="903.0" layoutY="88.0" stylesheets="@u.css" text="SYSTEM ADMIN INFORMATION" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TextField id="settingsUiButtons" fx:id="userPasswordTextField" layoutX="297.0" layoutY="735.0" prefHeight="40.0" prefWidth="255.0" promptText="password" stylesheets="@u.css" />
+      <Button layoutX="904.0" layoutY="681.0" mnemonicParsing="false" onMouseClicked="#editAdminDetailsButtonClick" style="-fx-min-height: 20; -fx-min-width: 150;" stylesheets="@u.css" text="EDIT details" />
+      <TextField id="settingsUiButtons" fx:id="adminUsernameTextField" layoutX="905.0" layoutY="734.0" prefHeight="40.0" prefWidth="255.0" promptText="username" stylesheets="@u.css" />
+      <Button id="settingsUiButtons" fx:id="saveAdminDetailsButtonClick" layoutX="1457.0" layoutY="734.0" mnemonicParsing="false" onMouseClicked="#saveAdminDetailsEdited" style="-fx-min-height: 20;" stylesheets="@u.css" text="SAVE" />
+      <TextField id="settingsUiButtons" fx:id="adminPasswordTextField" layoutX="1185.0" layoutY="734.0" prefHeight="40.0" prefWidth="255.0" promptText="password" stylesheets="@u.css" />
+      <Button layoutX="222.0" layoutY="83.0" mnemonicParsing="false" onMouseClicked="#loadUserDetailsData" style="-fx-min-height: 20; -fx-min-width: 150;" stylesheets="@u.css" text="LOAD DATA" />
+   </children>
+</AnchorPane>

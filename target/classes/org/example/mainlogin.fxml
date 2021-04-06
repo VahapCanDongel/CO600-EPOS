@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainMenuAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1900.0" style="-fx-background-color: #3d3d3d;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.MainLoginController">
+   <children>
+      <Rectangle arcHeight="5.0" fill="#fc5959" height="74.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1900.0" />
+      <Label layoutX="14.0" layoutY="5.0" stylesheets="@u.css" text="EPOS" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginButton" layoutX="826.0" layoutY="461.0" mnemonicParsing="false" onMouseClicked="#loginButtonClicked" stylesheets="@u.css" text="LOGIN" />
+      <Label layoutX="95.0" layoutY="4.0" stylesheets="@u.css" text="|" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="156.0" layoutY="5.0" stylesheets="@u.css" text="Ollie's Kebab Sutton" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="174.0" layoutY="28.0" stylesheets="@u.css" text="1C High St, SM1 1DE" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="189.0" layoutY="48.0" stylesheets="@u.css" text=" 020 8642 5050" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="1651.0" layoutY="69.0" prefHeight="65.0" prefWidth="113.0" stylesheets="@u.css" text="--------" textFill="WHITE" visible="false">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="807.0" layoutY="12.0" stylesheets="@u.css" text="SYSTEM LOGIN" textFill="WHITE">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userNameTextField" layoutX="712.0" layoutY="330.0" prefHeight="37.0" prefWidth="341.0" style="-fx-background-color: #fc5959; -fx-font-family: Bebas Neue; -fx-text-fill: white;" />
+      <PasswordField fx:id="passwordTextField" layoutX="712.0" layoutY="403.0" prefHeight="37.0" prefWidth="341.0" style="-fx-background-color: #fc5959; -fx-font-family: Bebas Neue; -fx-text-fill: white;" />
+      <Label layoutX="711.0" layoutY="305.0" stylesheets="@u.css" text="Username" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="711.0" layoutY="379.0" stylesheets="@u.css" text="PASSWORD" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="notCorrectError" layoutX="769.0" layoutY="263.0" stylesheets="@u.css" text="Username or password is not correct" textFill="#fc5959" visible="false">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+############################ Order Number: 1927 ############################
+
+                            OLLIES KEBAB SUTTON
+                      SUTTON STATION, HIGH ST, SM1 1DE
+                              020 8642 5050
+
+                  ########## CUSTOMER DETAILS ##########
+
+                            FIRST NAME: Idris
+                            LAST NAME: Bilen
+                            ADDRESS LINE: University of Kent
+                            POST CODE: CT27FN
+                            MOBILE NUMBER: 07729257996
+
+                  ########## ORDER TYPE: DELIVERY ##########
++-----------------+--------------------+
+|    Item Name    |     Price          |
++-----------------+--------------------+
+
+Chicken Shish                  4.99                  
+Chicken Shish                  4.99                  
+Chicken Shish                  4.99                  
+Chicken Shish                  4.99                  
+Chicken Shish                  4.99                  
+Chicken Shish                  4.99                  
+Chicken Shish                  4.99                  
+Kofte Kebab                  5.99                  
+Kofte Kebab                  5.99                  
+                                 +---------------------+
+                                 |     TOTAL: £46.91    |
+                                 +---------------------+
+
+############################################################################

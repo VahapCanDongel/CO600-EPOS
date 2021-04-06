@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+
+<AnchorPane fx:id="mainMenuAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseMoved="#mainMenuUpdate" prefHeight="800.0" prefWidth="1900.0" style="-fx-background-color: #3d3d3d;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.PrimaryController">
+   <children>
+      <Rectangle arcHeight="5.0" fill="#fc5959" height="74.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1900.0" />
+      <Label layoutX="14.0" layoutY="5.0" stylesheets="@u.css" text="EPOS" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Button fx:id="settingsButton" layoutX="10.0" layoutY="736.0" mnemonicParsing="false" onMouseClicked="#settingsButtonCLciked" stylesheets="@u.css" text="SETTINGS" />
+      <Label layoutX="95.0" layoutY="4.0" stylesheets="@u.css" text="|" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="156.0" layoutY="5.0" stylesheets="@u.css" text="Ollie's Kebab Sutton" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="174.0" layoutY="28.0" stylesheets="@u.css" text="1C High St, SM1 1DE" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="189.0" layoutY="48.0" stylesheets="@u.css" text=" 020 8642 5050" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="deliveryButton" layoutX="10.0" layoutY="86.0" mnemonicParsing="false" onMouseClicked="#deliveryButtonClick" stylesheets="@u.css" text="DELIVERY" />
+      <Button fx:id="takeawayButton" layoutX="124.0" layoutY="86.0" mnemonicParsing="false" onMouseClicked="#takeawayButtonClick" stylesheets="@u.css" text="TAKEAWAY" />
+      <Button fx:id="walkinButton" layoutX="238.0" layoutY="86.0" mnemonicParsing="false" onMouseClicked="#walkInButtonClick" stylesheets="@u.css" text="WALK-IN" />
+      <Label layoutX="352.0" layoutY="77.0" stylesheets="@u.css" text="|" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Button fx:id="orderListButton" layoutX="388.0" layoutY="86.0" mnemonicParsing="false" onMouseClicked="#orderListButtonClick" stylesheets="@u.css" text="ORDER LIST" />
+      <Label layoutX="1651.0" layoutY="69.0" prefHeight="65.0" prefWidth="113.0" stylesheets="@u.css" text="--------" textFill="WHITE" visible="false">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="deliveryDetailsPane" layoutY="251.0" prefHeight="388.0" prefWidth="444.0" style="-fx-background-color: #fc5959;" visible="false">
+         <children>
+            <Label layoutX="139.0" layoutY="5.0" stylesheets="@u.css" text="DELIVERY DETAILS" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="140.0" layoutY="3.0" prefHeight="65.0" prefWidth="126.0" stylesheets="@u.css" text="---------------" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="56.0" stylesheets="@u.css" text="first name:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="firstNameTextFieldDelivery" layoutX="168.0" layoutY="56.0" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #3d3d3d;" stylesheets="@u.css" />
+            <Label layoutX="22.0" layoutY="88.0" stylesheets="@u.css" text="Last Name:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="lastNameTextFieldDelivery" layoutX="168.0" layoutY="88.0" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #3d3d3d;" stylesheets="@u.css" />
+            <Label layoutX="22.0" layoutY="120.0" stylesheets="@u.css" text="Address Line:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="addressLineTextFieldDelivery" layoutX="168.0" layoutY="120.0" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #3d3d3d;" stylesheets="@u.css" />
+            <Label layoutX="23.0" layoutY="153.0" stylesheets="@u.css" text="post Code:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="postCodeTextFieldDelivery" layoutX="168.0" layoutY="153.0" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #3d3d3d;" stylesheets="@u.css" />
+            <Label layoutX="23.0" layoutY="186.0" stylesheets="@u.css" text="Contact Number:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="numberTextFieldDelivery" layoutX="168.0" layoutY="186.0" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #3d3d3d;" stylesheets="@u.css" />
+            <Button id="deliveryDetailsButtons" fx:id="saveCustomerDeliveryButton" layoutX="188.0" layoutY="222.0" maxHeight="30.0" mnemonicParsing="false" onMouseClicked="#saveCustomerDeliveryClick" prefWidth="80.0" stylesheets="@u.css" text="SAVE CUSTOMER" />
+            <Button id="deliveryDetailsButtons" fx:id="checkPostCodeButton" layoutX="12.0" layoutY="278.0" maxHeight="30.0" maxWidth="101.0" mnemonicParsing="false" onMouseClicked="#checkPostCodeClick" prefHeight="27.0" prefWidth="101.0" stylesheets="@u.css" text="check post code" />
+            <Label fx:id="postCodeValidationLabel" layoutX="147.0" layoutY="276.0" stylesheets="@u.css" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="showMilageLabel" layoutX="147.0" layoutY="291.0" stylesheets="@u.css" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="callerIDAcnhorPane" layoutX="1424.0" layoutY="74.0" prefHeight="136.0" prefWidth="398.0" style="-fx-background-color: #fc5959;">
+         <children>
+            <Label layoutX="140.0" layoutY="-1.0" stylesheets="@u.css" text="INCOMING CALL" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="7.0" layoutY="38.0" stylesheets="@u.css" text="FIRST NAME:" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="198.0" layoutY="38.0" stylesheets="@u.css" text="LAST NAME:" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="7.0" layoutY="68.0" stylesheets="@u.css" text="ADDRESS LINE:" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="8.0" layoutY="95.0" stylesheets="@u.css" text="NUMBER:" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="199.0" layoutY="68.0" stylesheets="@u.css" text="POST CODE:" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="firstNameLabel" layoutX="69.0" layoutY="38.0" stylesheets="@u.css" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lastNameLabel" layoutX="258.0" layoutY="38.0" stylesheets="@u.css" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="addressLineLabel" layoutX="79.0" layoutY="68.0" stylesheets="@u.css" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="postCoodeLabel" layoutX="254.0" layoutY="68.0" stylesheets="@u.css" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="numberLabel" layoutX="50.0" layoutY="95.0" stylesheets="@u.css" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <Button fx:id="takingsButton" layoutX="502.0" layoutY="86.0" mnemonicParsing="false" onMouseClicked="#takingsButtonClick" stylesheets="@u.css" text="TAKINGS" />
+      <WebView fx:id="webView" layoutX="459.0" layoutY="251.0" prefHeight="388.0" prefWidth="555.0" visible="false" />
+      <AnchorPane fx:id="takeawayDetailsPane" layoutY="251.0" prefHeight="388.0" prefWidth="444.0" style="-fx-background-color: #fc5959;" visible="false">
+         <children>
+            <Label layoutX="139.0" layoutY="5.0" stylesheets="@u.css" text="TAKEAWAY DETAILS" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="143.0" layoutY="3.0" prefHeight="65.0" prefWidth="144.0" stylesheets="@u.css" text="----------------" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="56.0" stylesheets="@u.css" text="first name:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="firstNameTextFieldTakeaway" layoutX="168.0" layoutY="56.0" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #3d3d3d;" stylesheets="@u.css" />
+            <Label layoutX="22.0" layoutY="88.0" stylesheets="@u.css" text="Last Name:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="lastNameTextFieldTakeaway" layoutX="168.0" layoutY="88.0" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #3d3d3d;" stylesheets="@u.css" />
+            <Label layoutX="22.0" layoutY="120.0" stylesheets="@u.css" text="Address Line:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="addressLineTextFieldTakeaway" layoutX="168.0" layoutY="120.0" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #3d3d3d;" stylesheets="@u.css" />
+            <Label layoutX="23.0" layoutY="153.0" stylesheets="@u.css" text="post Code:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="postCodeTextFieldTakeaway" layoutX="168.0" layoutY="153.0" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #3d3d3d;" stylesheets="@u.css" />
+            <Label layoutX="23.0" layoutY="186.0" stylesheets="@u.css" text="Contact Number:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="numberTextFieldTakeaway" layoutX="168.0" layoutY="186.0" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #3d3d3d;" stylesheets="@u.css" />
+            <Button id="deliveryDetailsButtons" fx:id="saveCustomerTakeawayButton" layoutX="188.0" layoutY="222.0" maxHeight="30.0" mnemonicParsing="false" onMouseClicked="#saveCustomerTakeAwayClick" prefWidth="80.0" stylesheets="@u.css" text="SAVE CUSTOMER" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="recommendProductButton" layoutX="1424.0" layoutY="216.0" mnemonicParsing="false" onMouseClicked="#recommendProductButtonClick" style="-fx-max-width: 200px;" stylesheets="@u.css" text="RECOMMEND PRODUCT" />
+      <Label fx:id="recommendLabelOne" layoutX="1592.0" layoutY="212.0" stylesheets="@u.css" text="RECOMMENDED PRODUCT :" textFill="WHITE" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="recommendLabelMain" layoutX="1741.0" layoutY="212.0" stylesheets="@u.css" textFill="#fc5959">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="recommendLabelTwo" layoutX="1592.0" layoutY="239.0" stylesheets="@u.css" text="BASED ON CUSTOMERS FAVOURITE SECTION" textFill="WHITE" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

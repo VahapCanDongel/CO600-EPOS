@@ -1,0 +1,22 @@
+{
+   "destination_addresses" : [ "Canterbury CT2 7FN, UK" ],
+   "origin_addresses" : [ "Keyworth Mews, Canterbury CT1 1XQ, UK" ],
+   "rows" : [
+      {
+         "elements" : [
+            {
+               "distance" : {
+                  "text" : "4.2 km",
+                  "value" : 4198
+               },
+               "duration" : {
+                  "text" : "8 mins",
+                  "value" : 503
+               },
+               "status" : "OK"
+            }
+         ]
+      }
+   ],
+   "status" : "OK"
+}

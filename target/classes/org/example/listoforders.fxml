@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainMenuAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1900.0" style="-fx-background-color: #3d3d3d;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.ListOfOrdersController">
+   <children>
+      <Rectangle arcHeight="5.0" fill="#fc5959" height="74.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1900.0" />
+      <Label layoutX="14.0" layoutY="5.0" stylesheets="@u.css" text="EPOS" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="95.0" layoutY="4.0" stylesheets="@u.css" text="|" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="174.0" layoutY="28.0" stylesheets="@u.css" text="1C High St, SM1 1DE" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="189.0" layoutY="48.0" stylesheets="@u.css" text=" 020 8642 5050" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="1651.0" layoutY="69.0" prefHeight="65.0" prefWidth="113.0" stylesheets="@u.css" text="--------" textFill="WHITE" visible="false">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <TableView fx:id="deliveryTable" layoutX="8.0" layoutY="163.0" prefHeight="543.0" prefWidth="389.0" stylesheets="@u.css">
+        <columns>
+          <TableColumn fx:id="nameColDelivery" editable="false" prefWidth="218.0" text="Product" />
+            <TableColumn fx:id="priceColDelivery" editable="false" prefWidth="170.0" text="QUANTITY" />
+        </columns>
+      </TableView>
+      <TableView fx:id="takeawayTable" layoutX="510.0" layoutY="163.0" prefHeight="543.0" prefWidth="417.0" stylesheets="@u.css">
+         <columns>
+            <TableColumn fx:id="nameColTakeaway" editable="false" prefWidth="205.0" text="Product" />
+            <TableColumn fx:id="priceColTakeaway" editable="false" prefWidth="211.0" text="QUANTITY" />
+         </columns>
+      </TableView>
+      <TableView fx:id="walkinTable" layoutX="1027.0" layoutY="163.0" prefHeight="543.0" prefWidth="432.0" stylesheets="@u.css">
+         <columns>
+            <TableColumn fx:id="nameColWalkin" editable="false" prefWidth="221.0" text="Product" />
+            <TableColumn fx:id="priceColWalkin" editable="false" prefWidth="210.0" text="QUANTITY" />
+         </columns>
+      </TableView>
+      <Label layoutX="10.0" layoutY="715.0" stylesheets="@u.css" text="TOTAL:" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalDelivery" layoutX="65.0" layoutY="715.0" stylesheets="@u.css" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="510.0" layoutY="715.0" stylesheets="@u.css" text="TOTAL:" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalTakeaway" layoutX="565.0" layoutY="715.0" stylesheets="@u.css" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="154.0" layoutY="4.0" stylesheets="@u.css" text="Ollie's Kebab Sutton" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="1027.0" layoutY="721.0" stylesheets="@u.css" text="TOTAL:" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalWalkin" layoutX="1082.0" layoutY="721.0" stylesheets="@u.css" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Button layoutX="1491.0" layoutY="163.0" mnemonicParsing="false" onMouseClicked="#loadDataForAllTablesButtonClick" stylesheets="@u.css" text="LOAD DATA" />
+      <Button layoutX="1491.0" layoutY="232.0" mnemonicParsing="false" onMouseClicked="#completeButtonClick" stylesheets="@u.css" text="COMPLETE" />
+      <Label layoutX="170.0" layoutY="125.0" stylesheets="@u.css" text="DELIVERY" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="681.0" layoutY="119.0" stylesheets="@u.css" text="TAKEAWAY" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="1213.0" layoutY="119.0" stylesheets="@u.css" text="WALK-IN" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="719.0" layoutY="12.0" stylesheets="@u.css" text="LIST OF ORDERS" textFill="WHITE">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="52.0" fitWidth="60.0" layoutX="1834.0" layoutY="15.0" onMouseClicked="#homeButtonClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@home-page.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

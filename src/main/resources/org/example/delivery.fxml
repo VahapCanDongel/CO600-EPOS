@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainMenuAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1900.0" style="-fx-background-color: #3d3d3d;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.DeliveryController">
+   <children>
+      <Rectangle arcHeight="5.0" fill="#fc5959" height="74.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1900.0" />
+      <Label layoutX="14.0" layoutY="5.0" stylesheets="@u.css" text="EPOS" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="95.0" layoutY="4.0" stylesheets="@u.css" text="|" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="156.0" layoutY="5.0" stylesheets="@u.css" text="Ollie's Kebab Sutton" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="174.0" layoutY="28.0" stylesheets="@u.css" text="1C High St, SM1 1DE" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="189.0" layoutY="48.0" stylesheets="@u.css" text=" 020 8642 5050" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="kebabButton" layoutX="14.0" layoutY="736.0" mnemonicParsing="false" onMouseClicked="#kebabButtonClick" stylesheets="@u.css" text="Kebab" />
+      <Button fx:id="chickenButton" layoutX="128.0" layoutY="736.0" mnemonicParsing="false" onMouseClicked="#chickenButtonClick" stylesheets="@u.css" text="Chicken" />
+      <Button fx:id="burgerButton" layoutX="242.0" layoutY="736.0" mnemonicParsing="false" onMouseClicked="#burgerButtonClick" stylesheets="@u.css" text="BURGER" />
+      <Label layoutX="1651.0" layoutY="69.0" prefHeight="65.0" prefWidth="113.0" stylesheets="@u.css" text="--------" textFill="WHITE" visible="false">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="callerIDAcnhorPane" layoutX="1424.0" layoutY="74.0" prefHeight="136.0" prefWidth="398.0" style="-fx-background-color: #fc5959;">
+         <children>
+            <Label layoutX="134.0" layoutY="-1.0" stylesheets="@u.css" text="CUSTOMER DETAILS" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="7.0" layoutY="38.0" stylesheets="@u.css" text="FIRST NAME:" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="198.0" layoutY="38.0" stylesheets="@u.css" text="LAST NAME:" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="7.0" layoutY="68.0" stylesheets="@u.css" text="ADDRESS LINE:" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="8.0" layoutY="95.0" stylesheets="@u.css" text="NUMBER:" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="199.0" layoutY="68.0" stylesheets="@u.css" text="POST CODE:" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="firstNameLabelDelivery" layoutX="69.0" layoutY="38.0" stylesheets="@u.css" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lastNameLabelDelivery" layoutX="258.0" layoutY="38.0" stylesheets="@u.css" text=" " textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="addressLineLabelDelivery" layoutX="79.0" layoutY="68.0" stylesheets="@u.css" text=" " textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="postCoodeLabelDelivery" layoutX="254.0" layoutY="68.0" stylesheets="@u.css" text=" " textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="numberLabelDelivery" layoutX="50.0" layoutY="95.0" stylesheets="@u.css" text=" " textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <Button fx:id="wrapButton" layoutX="356.0" layoutY="736.0" mnemonicParsing="false" onMouseClicked="#wrapButtonClick" stylesheets="@u.css" text="WRAP" />
+      <Button fx:id="sideButton" layoutX="470.0" layoutY="736.0" mnemonicParsing="false" onMouseClicked="#sideButtonClick" stylesheets="@u.css" text="side" />
+      <Button fx:id="vegeterianButton" layoutX="584.0" layoutY="736.0" mnemonicParsing="false" onMouseClicked="#vegeterianButtonClick" stylesheets="@u.css" text="Vegeterian" />
+      <Button fx:id="kidsButton" layoutX="698.0" layoutY="736.0" mnemonicParsing="false" onMouseClicked="#kidsButtonClick" stylesheets="@u.css" text="KIDS" />
+      <Button fx:id="offerButton" layoutX="812.0" layoutY="736.0" mnemonicParsing="false" onMouseClicked="#offerButtonClick" stylesheets="@u.css" text="OFFER" />
+      <TableView fx:id="orderTable" layoutX="1424.0" layoutY="223.0" prefHeight="467.0" prefWidth="398.0" stylesheets="@u.css">
+        <columns>
+          <TableColumn fx:id="nameColOrder" prefWidth="283.0" text="Product" />
+            <TableColumn fx:id="priceColOrder" prefWidth="114.0" text="Price" />
+        </columns>
+      </TableView>
+      <TableView fx:id="productTable" layoutX="14.0" layoutY="95.0" prefHeight="543.0" prefWidth="671.0" stylesheets="@u.css">
+        <columns>
+            <TableColumn fx:id="idColProduct" editable="false" prefWidth="124.0" text="ID" />
+          <TableColumn fx:id="nameColProduct" editable="false" prefWidth="384.0" text="Product" />
+          <TableColumn fx:id="priceColProduct" editable="false" prefWidth="162.0" text="Price" />
+        </columns>
+      </TableView>
+      <Button fx:id="completeOrderButton" layoutX="1478.0" layoutY="722.0" mnemonicParsing="false" onMouseClicked="#compeleteOrderButtonClick" stylesheets="@u.css" text="Complete" />
+      <Button fx:id="completeOrderButton1" layoutX="1663.0" layoutY="722.0" mnemonicParsing="false" onMouseClicked="#removeProductButtonClick" stylesheets="@u.css" text="REMOVE" />
+      <Label layoutX="1611.0" layoutY="713.0" stylesheets="@u.css" text="|" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Button fx:id="addOrderButton" layoutX="14.0" layoutY="651.0" mnemonicParsing="false" onMouseClicked="#addOrderButtonClick" stylesheets="@u.css" text="Add Order" />
+      <Label layoutX="1424.0" layoutY="688.0" stylesheets="@u.css" text="TOTAL:" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalTextLabel" layoutX="1476.0" layoutY="688.0" stylesheets="@u.css" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="893.0" layoutY="11.0" stylesheets="@u.css" text="DELIVERY" textFill="WHITE">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="50.0" fitWidth="48.0" layoutX="1822.0" layoutY="13.0" onMouseClicked="#homeButtonClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@home-page.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainMenuAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1900.0" style="-fx-background-color: #3d3d3d;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.TakingController">
+   <children>
+      <Rectangle arcHeight="5.0" fill="#fc5959" height="74.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1900.0" />
+      <Label layoutX="14.0" layoutY="5.0" stylesheets="@u.css" text="EPOS" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="95.0" layoutY="4.0" stylesheets="@u.css" text="|" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="174.0" layoutY="28.0" stylesheets="@u.css" text="1C High St, SM1 1DE" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="189.0" layoutY="48.0" stylesheets="@u.css" text=" 020 8642 5050" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="1651.0" layoutY="69.0" prefHeight="65.0" prefWidth="113.0" stylesheets="@u.css" text="--------" textFill="WHITE" visible="false">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <TableView fx:id="takingsTable" layoutX="14.0" layoutY="134.0" prefHeight="604.0" prefWidth="1267.0" stylesheets="@u.css">
+        <columns>
+          <TableColumn fx:id="orderTypeCol" editable="false" prefWidth="390.0" text="ORDER TYPE" />
+            <TableColumn fx:id="dateCol" editable="false" prefWidth="466.0" text="DATE" />
+            <TableColumn fx:id="totalCol" editable="false" prefWidth="419.0" text="TOTAL" />
+        </columns>
+      </TableView>
+      <Label layoutX="154.0" layoutY="4.0" stylesheets="@u.css" text="Ollie's Kebab Sutton" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <DatePicker id="datePicker" fx:id="datePicker" layoutX="1442.0" layoutY="134.0" prefHeight="41.0" prefWidth="226.0" promptText="PLEASE PICK A DATE" />
+      <Button layoutX="1688.0" layoutY="133.0" mnemonicParsing="false" onMouseClicked="#goToSelectedDateButtonClick" prefHeight="22.0" prefWidth="52.0" style="-fx-max-height: 43; -fx-min-height: 43;" stylesheets="@u.css" text="GO TO" />
+      <Button layoutX="1442.0" layoutY="199.0" mnemonicParsing="false" onMouseClicked="#goTodayButtonClick" prefHeight="22.0" prefWidth="52.0" style="-fx-max-height: 43; -fx-min-height: 43;" stylesheets="@u.css" text="TODAY" />
+      <Label layoutX="792.0" layoutY="12.0" stylesheets="@u.css" text="TAKINGS" textFill="WHITE">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="52.0" fitWidth="49.0" layoutX="1837.0" layoutY="16.0" onMouseClicked="#homeButtonClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@home-page.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="1442.0" layoutY="268.0" stylesheets="@u.css" text="TOTAL:" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalOfTheDay" layoutX="1500.0" layoutY="268.0" stylesheets="@u.css" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,35 @@
+############################ Order Number: 1906 ############################
+
+                            OLLIES KEBAB SUTTON
+                      SUTTON STATION, HIGH ST, SM1 1DE
+                              020 8642 5050
+
+
+                  ########## ORDER TYPE: WALK-IN ##########
++-----------------+--------------------+
+|    Item Name    |     Price          |
++-----------------+--------------------+
+
+Lamb Doner                  4.99                  
+Lamb Doner                  4.99                  
+Lamb Doner                  4.99                  
+Lamb Doner                  4.99                  
+Lamb Doner                  4.99                  
+Lamb Doner                  4.99                  
+Lamb Doner                  4.99                  
+Lamb Doner                  4.99                  
+Chicken Shish                  4.99                  
+Chicken Shish                  4.99                  
+Chicken Shish                  4.99                  
+Chicken Shish                  4.99                  
+Chicken Shish                  4.99                  
+Chicken Shish                  4.99                  
+Chicken Shish                  4.99                  
+Chicken Shish                  4.99                  
+Kofte Kebab                  5.99                  
+Kofte Kebab                  5.99                  
+                                 +---------------------+
+                                 |     TOTAL: £91.82    |
+                                 +---------------------+
+
+############################################################################
